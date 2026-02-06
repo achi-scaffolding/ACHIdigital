@@ -1,0 +1,87 @@
+{
+  "global": {
+    "siteName": "ACHI Digital",
+    "defaultTitle": "ACHI Digital — Agence Web & Création de Sites Internet Professionnels",
+    "defaultDescription": "ACHI Digital est une agence digitale spécialisée dans la création de sites web professionnels, le développement web sur mesure, le SEO et les solutions digitales performantes pour les entreprises."
+  },
+
+  "home": {
+    "title": "Création de Site Web & Agence Digitale — Sites Performants et Orientés Conversion",
+    "description": "ACHI Digital est une agence web moderne spécialisée dans la création et le développement de sites internet professionnels, SEO-friendly et orientés conversion, conçus pour générer des leads, des ventes et une croissance digitale durable."
+  },
+
+  "services": {
+    "index": {
+      "title": "Services de Création de Site Web & Solutions Digitales",
+      "description": "Découvrez nos services de création de site web, développement web sur mesure, design UX/UI, SEO technique, optimisation des performances et solutions digitales évolutives pour entreprises."
+    },
+
+    "websiteDevelopment": {
+      "title": "Développement de Site Web sur Mesure",
+      "description": "Services de développement de site web sur mesure pour créer des sites rapides, sécurisés, évolutifs et optimisés SEO, adaptés aux objectifs business de votre entreprise."
+    },
+
+    "webDesign": {
+      "title": "Design de Site Web & UX/UI Professionnel",
+      "description": "Design web haut de gamme et UX/UI orientée conversion pour des sites professionnels modernes, performants et centrés sur l’expérience utilisateur."
+    },
+
+    "seo": {
+      "title": "Services SEO & Sites Web Optimisés pour le Référencement",
+      "description": "Services SEO complets incluant SEO technique, structure SEO de site web, optimisation on-page et off-page pour améliorer la visibilité Google et la croissance organique."
+    },
+
+    "ai": {
+      "title": "Création de Sites Web Intelligents & IA",
+      "description": "Développement de sites web intelligents intégrant des solutions IA pour la personnalisation, l’optimisation de la conversion et des plateformes digitales nouvelle génération, tout en restant SEO-safe."
+    }
+  },
+
+  "about": {
+    "title": "À propos d’ACHI Digital — Agence Web de Confiance",
+    "description": "ACHI Digital est une agence web de confiance spécialisée dans la création de sites internet professionnels, le développement web moderne, le SEO et les solutions digitales orientées performance."
+  },
+
+  "blog": {
+    "index": {
+      "title": "Création de Sites Web, SEO & Croissance Digitale",
+      "description": "Articles et ressources sur la création de sites web, le SEO moderne, la performance web, l’optimisation de la conversion, l’IA et la croissance digitale des entreprises."
+    }
+  },
+
+  "careers": {
+    "title": "Carrières — Rejoindre Notre Agence Digitale",
+    "description": "Découvrez les opportunités de carrière chez ACHI Digital et rejoignez une agence digitale moderne spécialisée dans la création de sites web performants et orientés SEO."
+  },
+
+  "contact": {
+    "title": "Contact — Demande de Devis Création de Site Web",
+    "description": "Contactez ACHI Digital pour faire créer un site web professionnel. Demandez un devis, discutez de votre projet ou planifiez un appel stratégique avec nos experts web."
+  },
+
+  "legal": {
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "description": "Consultez la politique de confidentialité d’ACHI Digital expliquant la collecte, l’utilisation et la protection des données personnelles."
+    },
+    "cookies": {
+      "title": "Politique de Cookies",
+      "description": "Informations sur l’utilisation des cookies par ACHI Digital pour améliorer la performance, l’expérience utilisateur et les analyses."
+    },
+    "terms": {
+      "title": "Conditions Générales",
+      "description": "Conditions générales régissant l’utilisation du site et des services professionnels proposés par ACHI Digital."
+    },
+    "accessibility": {
+      "title": "Déclaration d’Accessibilité",
+      "description": "ACHI Digital s’engage à fournir une expérience web accessible à tous, conformément aux bonnes pratiques d’accessibilité."
+    }
+  },
+
+  "errors": {
+    "notFound": {
+      "title": "Page introuvable",
+      "description": "La page demandée est introuvable. Découvrez nos services de création de site web ou revenez à l’accueil."
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "global": {
+    "siteName": "ACHI Digital",
+    "defaultTitle": "ACHI Digital — Professional Website Development & Digital Agency",
+    "defaultDescription": "ACHI Digital is a full-service digital agency providing professional website development, custom website services, SEO-friendly web design, and performance-driven digital solutions for businesses."
+  },
+
+  "home": {
+    "title": "Website Development & Digital Agency — Websites That Drive Business Growth",
+    "description": "ACHI Digital is a modern digital agency specializing in professional website development, custom website services, and conversion-focused web design. We build fast, SEO-friendly, scalable websites that generate leads, sales, and long-term ROI."
+  },
+
+  "services": {
+    "index": {
+      "title": "Website Development Services & Digital Solutions",
+      "description": "Explore our professional website development services, including custom website design, full-stack web development, SEO-friendly websites, performance optimization, and AI-ready digital solutions."
+    },
+
+    "websiteDevelopment": {
+      "title": "Custom Website Development Services",
+      "description": "Professional custom website development services designed to build fast, secure, scalable, and SEO-friendly websites tailored to your business goals."
+    },
+
+    "webDesign": {
+      "title": "Website Design & UI/UX Services",
+      "description": "High-end website design and UI/UX services focused on user experience, conversion optimization, and modern, professional business websites."
+    },
+
+    "seo": {
+      "title": "SEO Services & SEO-Friendly Website Development",
+      "description": "Technical SEO services, SEO-friendly website structure, and optimization strategies designed to improve search rankings, visibility, and long-term organic growth."
+    },
+
+    "ai": {
+      "title": "AI-Powered Website Development",
+      "description": "AI-powered website development services including intelligent personalization, AI-driven UX optimization, and future-ready digital platforms built with SEO-safe architecture."
+    }
+  },
+
+  "about": {
+    "title": "About ACHI Digital — Professional Web Development Agency",
+    "description": "Learn about ACHI Digital, a trusted digital agency specializing in professional website development, modern web design, SEO-first architecture, and performance-driven digital solutions."
+  },
+
+  "blog": {
+    "index": {
+      "title": "Web Development, SEO & Digital Growth Insights",
+      "description": "Insights and articles on website development, SEO, performance optimization, AI-powered websites, conversion-focused UX, and modern digital growth strategies."
+    }
+  },
+
+  "careers": {
+    "title": "Careers — Join Our Digital Agency",
+    "description": "Explore career opportunities at ACHI Digital and join a modern digital agency building professional, high-performance, SEO-first websites and digital platforms."
+  },
+
+  "contact": {
+    "title": "Contact Us — Get a Professional Website Built",
+    "description": "Contact ACHI Digital to get a professional website built. Request a quote, discuss your project, or schedule a strategy call with our web development experts."
+  },
+
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Read ACHI Digital’s privacy policy explaining how we collect, use, and protect personal data in compliance with privacy and data protection regulations."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "Learn how ACHI Digital uses cookies and similar technologies to improve website performance, user experience, and analytics."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Review the terms and conditions governing the use of ACHI Digital’s website and professional digital services."
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "description": "ACHI Digital is committed to providing an accessible website experience for all users, following accessibility best practices and standards."
+    }
+  },
+
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "The page you are looking for could not be found. Explore our website development services or return to the homepage."
+    }
+  }
+}

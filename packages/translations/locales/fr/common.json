@@ -1,0 +1,17 @@
+{
+  "home": {
+    "hero": {
+      "h1": "Création de sites web qui transforment votre entreprise en moteur de croissance.",
+      "subtitle": "Nous sommes une agence digitale full service spécialisée dans la création et le développement de sites web professionnels, sur mesure et orientés conversion, pour les entreprises qui veulent générer plus de leads, plus de ventes et un retour sur investissement durable.",
+      "ctaPrimary": "Faire créer un site web professionnel",
+      "ctaSecondary": "Découvrir nos solutions web"
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "about": "À propos",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "contact": "Contact"
+  }
+}

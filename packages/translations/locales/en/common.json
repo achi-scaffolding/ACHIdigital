@@ -1,0 +1,17 @@
+{
+  "home": {
+    "hero": {
+      "h1": "Website development that turns your business into a growth engine.",
+      "subtitle": "We are a full-service digital agency delivering professional website development, custom website services, and conversion-focused web design for businesses that want more leads, more sales, and long-term ROI — not just a nice-looking website.",
+      "ctaPrimary": "Get a professional website built",
+      "ctaSecondary": "See how our websites convert"
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact"
+  }
+}
