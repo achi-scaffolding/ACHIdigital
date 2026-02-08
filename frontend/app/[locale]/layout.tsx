@@ -3,24 +3,13 @@ import type { ReactNode } from "react"
 import { isLocale, dirForLocale, type Locale } from "../../src/i18n/locales"
 import { loadSeo, t as tt } from "../../src/i18n/loadTranslations"
 
-export const dynamicParams = false
-
-export function generateStaticParams(): Array<{ locale: Locale }> {
-  return [{ locale: "en" }, { locale: "fr" }, { locale: "ar" }]
-}
-
-function withBase(path: string) {
-  const base = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "")
-  if (!base) return path
-  return `${base}${path.startsWith("/") ? "" : "/"}${path}`
-}
-
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const locale = (isLocale(params.locale) ? params.locale : "en") as Locale
+  const { locale: raw } = await params
+  const locale = (isLocale(raw) ? raw : "en") as Locale
 
   const seo = await loadSeo(locale)
   const title = tt(seo, "home.title")
@@ -30,24 +19,25 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: withBase(`/${locale}/`),
+      canonical: `/${locale}`,
       languages: {
-        en: withBase("/en/"),
-        fr: withBase("/fr/"),
-        ar: withBase("/ar/"),
+        en: "/en",
+        fr: "/fr",
+        ar: "/lb",
       },
     },
   }
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const locale = (isLocale(params.locale) ? params.locale : "en") as Locale
+  const { locale: raw } = await params
+  const locale = (isLocale(raw) ? raw : "en") as Locale
   const dir = dirForLocale(locale)
 
   return (

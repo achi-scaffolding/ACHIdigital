@@ -36,6 +36,8 @@ jobs:
         run: npm ci
 
       - name: Build (static export)
+        env:
+          NEXT_PUBLIC_BASE_PATH: "/ACHIdigital"
         run: npm run build
 
       - name: Disable Jekyll
