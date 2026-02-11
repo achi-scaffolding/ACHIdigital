@@ -2,12 +2,18 @@ import Link from "next/link"
 import { isLocale, type Locale } from "../../../src/i18n/locales"
 import { loadCommon, t as tt } from "../../../src/i18n/loadTranslations"
 
-const STATIC_LOCALES: Locale[] = ["en", "fr", "ar"]
+const STATIC_LOCALES: Locale[] = ["en", "fr", "lb"]
 
 function withBase(path: string) {
   const base = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "")
   if (!base) return path
   return `${base}${path.startsWith("/") ? "" : "/"}${path}`
+}
+
+function homePathForLocale(locale: Locale): string {
+  if (locale === "en") return "/"
+  if (locale === "fr") return "/fr/"
+  return "/lb/"
 }
 
 export async function generateStaticParams(): Promise<Array<{ locale: Locale }>> {
@@ -21,14 +27,25 @@ export default async function ServicesPage({
 }) {
   const { locale: raw } = await params
   const locale = (isLocale(raw) ? raw : "en") as Locale
+
   const dict = await loadCommon(locale)
 
   const title = tt(dict, "services.title")
   const subtitle = tt(dict, "services.subtitle")
   const backHome = tt(dict, "services.backHome")
+  const brand = tt(dict, "header.brand")
+
+  const dir = locale === "lb" ? "rtl" : "ltr"
 
   return (
-    <main style={{ maxWidth: 980, margin: "0 auto", padding: "48px 20px" }}>
+    <main
+      dir={dir}
+      style={{
+        maxWidth: 980,
+        margin: "0 auto",
+        padding: "48px 20px",
+      }}
+    >
       <header
         style={{
           display: "flex",
@@ -37,8 +54,9 @@ export default async function ServicesPage({
           alignItems: "center",
         }}
       >
-        <div style={{ fontWeight: 700 }}>ACHI Digital</div>
-        <Link href={withBase(`/${locale}/`)} style={{ textDecoration: "none" }}>
+        <div style={{ fontWeight: 700 }}>{brand}</div>
+
+        <Link href={withBase(homePathForLocale(locale))} style={{ textDecoration: "none" }}>
           {backHome}
         </Link>
       </header>

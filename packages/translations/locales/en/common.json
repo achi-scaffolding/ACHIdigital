@@ -1,10 +1,27 @@
 {
-  "home": {
-    "hero": {
-      "h1": "Website development that turns your business into a growth engine.",
-      "subtitle": "We are a full-service digital agency delivering professional website development, custom website services, and conversion-focused web design for businesses that want more leads, more sales, and long-term ROI — not just a nice-looking website.",
-      "ctaPrimary": "Get a professional website built",
-      "ctaSecondary": "See how our websites convert"
+  "header": {
+    "brand": "ACHI Digital",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "servicesDropdown": {
+      "viewAll": "View all services",
+      "items": {
+        "aiWebsiteDevelopment": "AI Website Development",
+        "seoAiVisibility": "SEO & AI Visibility",
+        "uxuiDesign": "UX/UI Design",
+        "performanceOptimization": "Performance Optimization"
+      }
+    },
+    "cta": "Get a Free Website Audit",
+    "lang": {
+      "en": "EN",
+      "fr": "FR",
+      "ar": "AR"
     }
   },
   "nav": {
@@ -13,5 +30,13 @@
     "blog": "Blog",
     "careers": "Careers",
     "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "h1": "Professional Website Development & Digital Growth Agency",
+      "subtitle": "We design and build high-performance business websites that help companies grow, convert visitors, and generate measurable results. As a full-service web development agency, we deliver website design and development, SEO-ready structure, and conversion-focused user experience—so your website becomes a real business asset, not just an online presence.",
+      "ctaPrimary": "Get a Free Website Audit",
+      "ctaSecondary": "View Services"
+    }
   }
 }
