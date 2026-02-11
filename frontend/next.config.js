@@ -10,7 +10,7 @@ const nextConfig = {
   experimental: { externalDir: true },
   transpilePackages: ["translations"],
 
-  output: "export",
+  output: isGithubActions ? "export" : undefined,
   trailingSlash: true,
 
   basePath,

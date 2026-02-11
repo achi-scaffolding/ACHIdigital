@@ -1,4 +1,29 @@
 {
+  "header": {
+    "brand": "ACHI Digital",
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "servicesDropdown": {
+      "viewAll": "Voir tous les services",
+      "items": {
+        "aiWebsiteDevelopment": "Développement de sites web IA",
+        "seoAiVisibility": "SEO & visibilité IA",
+        "uxuiDesign": "Design UX/UI",
+        "performanceOptimization": "Optimisation des performances"
+      }
+    },
+    "cta": "Obtenir un audit de site gratuit",
+    "lang": {
+      "en": "EN",
+      "fr": "FR",
+      "ar": "AR"
+    }
+  },
   "home": {
     "hero": {
       "h1": "Création de sites web qui transforment votre entreprise en moteur de croissance.",
