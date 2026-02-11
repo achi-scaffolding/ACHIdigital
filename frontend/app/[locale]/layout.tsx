@@ -2,6 +2,15 @@ import type { Metadata } from "next"
 import type { ReactNode } from "react"
 import { isLocale, dirForLocale, type Locale } from "../../src/i18n/locales"
 import { loadSeo, t as tt } from "../../src/i18n/loadTranslations"
+import "../globals.css"
+
+const STATIC_LOCALES: Locale[] = ["en", "fr", "ar"]
+
+export const dynamicParams = false
+
+export async function generateStaticParams(): Promise<Array<{ locale: Locale }>> {
+  return STATIC_LOCALES.map((locale) => ({ locale }))
+}
 
 export async function generateMetadata({
   params,
@@ -42,7 +51,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={dir}>
-      <body>{children}</body>
+      <body>
+        <div className="services-tunnel-bg" aria-hidden="true" />
+        <div className="services-tunnel-sweep" aria-hidden="true" />
+        <div className="services-tunnel-vignette2" aria-hidden="true" />
+        {children}
+      </body>
     </html>
   )
 }
