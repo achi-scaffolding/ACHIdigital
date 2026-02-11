@@ -39,4 +39,114 @@
       "ctaSecondary": "View Services"
     }
   }
+  "services": {
+    "page": {
+      "h1": "AI-Powered Digital Services for Business Growth",
+      "heroP": "Professional digital services built for growth, performance, and visibility — modular, scalable, and AI-ready.",
+      "entitySentence": "ACHIDigital provides AI-first website development, optimization, visibility, and advanced digital services designed to help businesses grow through high-performance, conversion-focused online platforms.",
+      "h2Services": "Our Services",
+      "h2WorkTogether": "How Our Services Work Together",
+      "workTogetherP": "Our services are modular and can be combined based on your goals and growth stage. Each service has a dedicated deep-dive page to keep the structure clean, scalable, and SEO-friendly.",
+      "h2ForWho": "Who These Services Are For",
+      "audience": {
+        "smb": "Small & mid-size businesses",
+        "startups": "Startups & founders",
+        "saas": "SaaS companies",
+        "ecommerce": "E-commerce brands",
+        "agencies": "Agencies",
+        "local": "Local businesses"
+      },
+      "h2Philosophy": "Our Service Philosophy",
+      "philosophy": {
+        "businessFirst": "Business-first",
+        "seoFirst": "SEO-first",
+        "performanceFirst": "Performance-first",
+        "aiSafe": "AI-safe",
+        "longTerm": "Long-term growth mindset"
+      },
+      "h2Outcomes": "Outcomes You Can Expect",
+      "outcomes": {
+        "conversion": "Higher conversion rates",
+        "visibility": "Better visibility across search and AI systems",
+        "performance": "Faster loading and stronger performance",
+        "scalability": "Scalable systems that grow with your business",
+        "roi": "Measurable ROI"
+      },
+      "h2NotSure": "Not Sure Which Service You Need?",
+      "notSureP": "If you’re unsure where to start, we can guide you toward the right service mix based on your goals.",
+      "cta": {
+        "audit": "Request a Free Audit",
+        "guidance": "Get Expert Guidance",
+        "talk": "Talk to Our Team"
+      },
+      "h2Faq": "Services FAQs",
+      "faq": {
+        "q1": "Do I need all services together?",
+        "a1": "No. Services are modular — you can start with one service and expand as you grow.",
+        "q2": "Can you work with my existing website?",
+        "a2": "Yes. We can improve performance, UX, SEO, and AI visibility without rebuilding everything.",
+        "q3": "Do you provide ongoing support?",
+        "a3": "Yes. We offer ongoing optimization and support depending on your needs."
+      }
+    },
+    "list": {
+      "aiWebsiteDev": "AI Website Development",
+      "fullStack": "Full-Stack Web & App Development",
+      "performance": "Website Optimization & Performance Engineering",
+      "uxui": "UX/UI Design & User Experience",
+      "seo": "Search Engine Optimization (SEO)",
+      "geo": "GEO & LLM Search Optimization (AI Visibility)",
+      "aeo": "Answer Engine Optimization (AEO)",
+      "ppc": "Paid Advertising (PPC)",
+      "content": "Content & Professional Writing",
+      "ecommerce": "E-commerce Solutions",
+      "aiAutomation": "Advanced AI Integrations & Automation"
+    },
+      "cards": {
+      "aiWebsiteDev": {
+        "subtitle": "Adaptive • Fast • Conversion-first",
+        "alt": "AI Website Development"
+      },
+      "fullStack": {
+        "subtitle": "Product-grade web apps & platforms",
+        "alt": "Full-Stack Web & App Development"
+      },
+      "geo": {
+        "subtitle": "AI search visibility & LLM discovery",
+        "alt": "GEO & LLM Search Optimization"
+      },
+      "uxui": {
+        "subtitle": "Premium UX that builds trust",
+        "alt": "UX/UI Design & User Experience"
+      },
+      "seo": {
+        "subtitle": "Technical SEO for ranking & growth",
+        "alt": "Search Engine Optimization"
+      },
+      "content": {
+        "subtitle": "Human + AI • E-E-A-T content systems",
+        "alt": "Content & Professional Writing"
+      },
+      "aiAutomation": {
+        "subtitle": "Automation, agents, and integrations",
+        "alt": "Advanced AI Integrations & Automation"
+      }
+    }
+  },
+
+
+  "cards": {
+  "aiWebsiteDev": { "subtitle": "Adaptive • Fast • Conversion-first", "alt": "AI Website Development" },
+  "fullStack": { "subtitle": "Product-grade platforms & web apps", "alt": "Full-Stack Web & App Development" },
+  "performance": { "subtitle": "Speed, stability, Core Web Vitals", "alt": "Website Optimization & Performance" },
+  "uxui": { "subtitle": "Premium UX that builds trust", "alt": "UX/UI Design & User Experience" },
+  "seo": { "subtitle": "Technical SEO for ranking & growth", "alt": "Search Engine Optimization" },
+  "geo": { "subtitle": "AI search visibility & LLM discovery", "alt": "GEO & LLM Search Optimization" },
+  "aeo": { "subtitle": "Answers, snippets, assistant-ready pages", "alt": "Answer Engine Optimization" },
+  "ppc": { "subtitle": "High-intent traffic with control", "alt": "Paid Advertising (PPC)" },
+  "content": { "subtitle": "Human + AI • E-E-A-T content systems", "alt": "Content & Professional Writing" },
+  "ecommerce": { "subtitle": "Conversion-first online stores", "alt": "E-commerce Solutions" },
+  "aiAutomation": { "subtitle": "Automations, agents, integrations", "alt": "Advanced AI Integrations & Automation" }
+}
+
 }

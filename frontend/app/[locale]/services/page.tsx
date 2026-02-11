@@ -20,7 +20,15 @@ export async function generateStaticParams(): Promise<Array<{ locale: Locale }>>
   return STATIC_LOCALES.map((locale) => ({ locale }))
 }
 
-export default async function ServicesPage({
+type ServiceCard = {
+  slug: string
+  icon: string
+  titleKey: string
+  descKey: string
+  pills: string[]
+}
+
+export default async function Page({
   params,
 }: {
   params: Promise<{ locale: string }>
