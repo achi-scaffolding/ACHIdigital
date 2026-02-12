@@ -15,7 +15,6 @@ import {
   Zap,
 } from "lucide-react"
 
-const STATIC_LOCALES: RouteLocale[] = ["en", "fr", "lb"]
 const ICONS = {
   workflow: Workflow,
   code: Code2,
@@ -29,9 +28,12 @@ const ICONS = {
   zap: Zap,
 } as const
 
+const STATIC_LOCALES: RouteLocale[] = ["en", "fr", "lb"]
+
 export async function generateStaticParams(): Promise<Array<{ locale: RouteLocale }>> {
   return STATIC_LOCALES.map((locale) => ({ locale }))
 }
+
 
 type ServiceCard = {
   slug: string
