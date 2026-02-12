@@ -1,7 +1,7 @@
 import { isLocale, type Locale } from "../../../../src/i18n/locales"
 import { loadCommon } from "../../../../src/i18n/loadTranslations"
 
-const STATIC_LOCALES: Locale[] = ["en", "fr", "ar"]
+const STATIC_LOCALES: Locale[] = ["en", "fr", "lb"]
 
 export async function generateStaticParams() {
   return STATIC_LOCALES.map((locale) => ({ locale }))

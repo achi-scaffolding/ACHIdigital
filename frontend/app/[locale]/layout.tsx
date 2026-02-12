@@ -4,7 +4,7 @@ import { isLocale, dirForLocale, type Locale } from "../../src/i18n/locales"
 import { loadSeo, t as tt } from "../../src/i18n/loadTranslations"
 import "../globals.css"
 
-const STATIC_LOCALES: Locale[] = ["en", "fr", "ar"]
+const STATIC_LOCALES: Locale[] = ["en", "fr", "lb"]
 
 export const dynamicParams = false
 

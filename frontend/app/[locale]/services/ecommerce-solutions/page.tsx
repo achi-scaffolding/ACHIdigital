@@ -1,7 +1,7 @@
 import { isLocale, type Locale } from "../../../../src/i18n/locales"
 import { loadCommon } from "../../../../src/i18n/loadTranslations"
 
-const STATIC_LOCALES: Locale[] = ["en", "fr", "ar"]
+const STATIC_LOCALES: Locale[] = ["en", "fr", "lb"]
 
 export async function generateStaticParams(): Promise<Array<{ locale: Locale }>> {
   return STATIC_LOCALES.map((locale) => ({ locale }))
@@ -17,7 +17,7 @@ export default async function Page({
 
   await loadCommon(locale)
 
-  const dir = locale === "ar" ? "rtl" : "ltr"
+  const dir = locale === "lb" ? "rtl" : "ltr"
 
   return (
     <main dir={dir} style={{ maxWidth: 980, margin: "0 auto", padding: "64px 20px" }}>
