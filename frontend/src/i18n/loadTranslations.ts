@@ -8,21 +8,34 @@ type Dict = Record<string, any>
  * Translation folder locales (content locales):
  * - "lb" in the URL maps to Arabic content folder "ar"
  */
-type ContentLocale = "en" | "fr" | "lb"
+type ContentLocale = "en" | "fr" | "ar"
 
 function repoRootFromFrontend() {
   return path.resolve(process.cwd(), "..")
 }
 
 function localeFolder(locale: RouteLocale): ContentLocale {
-  if (locale === "lb") return "lb"
+  // ✅ Route locale "lb" uses Arabic content folder "ar"
+  if (locale === "lb") return "ar"
   if (locale === "en" || locale === "fr") return locale
   return "en"
 }
 
 async function readJson(absPath: string): Promise<Dict> {
-  const raw = await fs.readFile(absPath, "utf8")
-  return JSON.parse(raw) as Dict
+  try {
+    const raw = await fs.readFile(absPath, "utf8")
+    const trimmed = raw.trim()
+    if (!trimmed) return {}
+    return JSON.parse(trimmed) as Dict
+  } catch (err: any) {
+    // Avoid hard-crashing static export if a file is missing
+    if (err?.code === "ENOENT") {
+      console.warn(`[i18n] Missing JSON file: ${absPath}`)
+      return {}
+    }
+    console.warn(`[i18n] Failed reading JSON file: ${absPath}`, err)
+    return {}
+  }
 }
 
 function get(obj: any, keyPath: string) {
@@ -76,6 +89,7 @@ export async function loadCommonCached(locale: RouteLocale): Promise<Dict> {
   return dict
 }
 
+// Note: this returns a Promise<string> because it loads from disk/cache
 export async function tt(locale: RouteLocale, key: string): Promise<string> {
   const dict = await loadCommonCached(locale)
   return t(dict, key)
