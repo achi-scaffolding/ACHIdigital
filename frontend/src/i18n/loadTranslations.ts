@@ -8,14 +8,14 @@ type Dict = Record<string, any>
  * Translation folder locales (content locales):
  * - "lb" in the URL maps to Arabic content folder "ar"
  */
-type ContentLocale = "en" | "fr" | "ar"
+type ContentLocale = "en" | "fr" | "lb"
 
 function repoRootFromFrontend() {
   return path.resolve(process.cwd(), "..")
 }
 
 function localeFolder(locale: RouteLocale): ContentLocale {
-  if (locale === "lb") return "ar"
+  if (locale === "lb") return "lb"
   if (locale === "en" || locale === "fr") return locale
   return "en"
 }
