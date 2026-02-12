@@ -1,4 +1,4 @@
-export const SUPPORTED_LOCALES = ["en", "fr", "ar"] as const
+export const SUPPORTED_LOCALES = ["en", "fr", "lb"] as const
 export type Locale = (typeof SUPPORTED_LOCALES)[number]
 
 export function isLocale(v: string): v is Locale {
@@ -6,5 +6,5 @@ export function isLocale(v: string): v is Locale {
 }
 
 export function dirForLocale(locale: Locale) {
-  return locale === "ar" ? "rtl" : "ltr"
+  return locale === "lb" ? "rtl" : "ltr"
 }
